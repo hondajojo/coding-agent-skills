@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best AI Coding Agent Skills in 2026 (Claude Code, Cursor, Codex)</title>
+  <meta name="description" content="A categorized list of the best AI coding agent skills in 2026 for Claude Code, Cursor, Codex, Windsurf and Gemini CLI. Browse skills by purpose, agent and source." />
+  <link rel="canonical" href="https://coding-agent-skills.example.com/" />
+  <meta property="og:title" content="Best AI Coding Agent Skills in 2026" />
+  <meta property="og:description" content="Browse coding agent skills by purpose, agent and source." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root { color-scheme: light; --ink:#14212b; --muted:#5b6b76; --line:#dfe7ec; --brand:#0b6e4f; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--ink); background:#fbfaf7; line-height:1.6; }
+    header { border-bottom:1px solid var(--line); background:#fff; }
+    .wrap { max-width: 880px; margin:0 auto; padding:0 20px; }
+    header .wrap { padding:18px 20px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+    .brand { font-size:1.15rem; font-weight:700; color:var(--brand); text-decoration:none; }
+    nav a { color:var(--muted); text-decoration:none; margin-left:14px; font-size:.9rem; }
+    nav a:hover { color:var(--ink); }
+    main { padding:40px 0 80px; }
+    h1 { font-size:2.1rem; line-height:1.2; margin:.2em 0 .4em; }
+    .lead { font-size:1.12rem; color:var(--muted); max-width:60ch; }
+    h2 { font-size:1.5rem; margin-top:2.4em; border-bottom:2px solid var(--brand); padding-bottom:.3em; }
+    h3 { font-size:1.15rem; margin-top:1.6em; }
+    table { width:100%; border-collapse:collapse; margin:1em 0; font-size:.95rem; }
+    th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+    th { background:#eef4f1; font-weight:700; }
+    a { color:var(--brand); }
+    .note { background:#eef4f1; border-left:4px solid var(--brand); padding:12px 16px; border-radius:4px; margin:1.2em 0; }
+    footer { border-top:1px solid var(--line); color:var(--muted); font-size:.85rem; padding:24px 0; }
+    @media (max-width:600px){ h1{font-size:1.6rem;} table{font-size:.85rem;} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="/">CodingAgentSkills</a>
+      <nav>
+        <a href="#by-purpose">By Purpose</a>
+        <a href="#by-agent">By Agent</a>
+        <a href="#by-source">By Source</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1>Best AI Coding Agent Skills in 2026</h1>
+      <p class="lead">A categorized, up-to-date list of AI coding agent skills for Claude Code, Cursor, Codex, Windsurf and Gemini CLI. Use these skills to make your coding agent debug, test, review and document code more reliably.</p>
+
+      <h2>What Is a Coding Agent Skill?</h2>
+      <p>A coding agent skill is a small, filesystem-based bundle of instructions and reference material that extends a coding assistant. Most skills are organized around a <strong>SKILL.md</strong> file and load on demand, so you do not have to paste long prompts every time. They cover debugging, test-driven development, frontend polish, security review, documentation and repeatable workflows.</p>
+
+      <h2 id="by-purpose">Coding Agent Skills by Purpose</h2>
+      <p>Sorting skills by what they actually do is the fastest way to find the one you need.</p>
+      <table>
+        <tr><th>Purpose</th><th>Example skills</th><th>Why it helps</th></tr>
+        <tr><td>Debugging</td><td>Systematic debugging, root-cause triage</td><td>Turns a vague error into a repeatable investigation path.</td></tr>
+        <tr><td>Testing</td><td>Test-driven development, edge-case generation</td><td>Writes tests before the fix so the regression does not come back.</td></tr>
+        <tr><td>Frontend</td><td>React best practices, accessibility review</td><td>Keeps components consistent and keyboard-navigable.</td></tr>
+        <tr><td>Security</td><td>Security audit, dependency risk check</td><td>Finds injection, credential and supply-chain risks early.</td></tr>
+        <tr><td>Documentation</td><td>API docs, changelog generation</td><td>Produces accurate docs from the actual codebase.</td></tr>
+        <tr><td>Workflow</td><td>PR review, commit hygiene, release checklist</td><td>Makes multi-step jobs repeatable across a team.</td></tr>
+      </table>
+
+      <h2 id="by-agent">Coding Agent Skills by Agent</h2>
+      <p>The same skill often works across tools, but here is how each agent typically exposes skills.</p>
+      <h3>Claude Code Skills</h3>
+      <p>Claude Code loads <strong>SKILL.md</strong> bundles from the project or user directory and uses progressive disclosure to keep the prompt window light.</p>
+      <h3>Cursor Skills</h3>
+      <p>Cursor supports project rules and skill packs for code review, refactoring and frontend work.</p>
+      <h3>Codex Skills</h3>
+      <p>Codex uses skills stored under <code>.codex/skills</code> to add domain knowledge and repeatable workflows without retraining the model.</p>
+      <h3>Windsurf &amp; Gemini CLI</h3>
+      <p>Both support agent skills and rules files; Gemini CLI also benefits from portable, filesystem-based skill bundles.</p>
+
+      <h2 id="by-source">Coding Agent Skills by Source</h2>
+      <p>These are the most useful public collections to start from.</p>
+      <table>
+        <tr><th>Source</th><th>Best for</th><th>Notes</th></tr>
+        <tr><td>obra / superpowers</td><td>Debugging, TDD, general engineering</td><td>A popular starting pack with systematic debugging and test-first skills.</td></tr>
+        <tr><td>yu-iskw / coding-agent-skills</td><td>Curated skill + SOP collection</td><td>Targets Cursor, Claude Code and Gemini CLI.</td></tr>
+        <tr><td>Pydantic docs</td><td>Framework-specific skills</td><td>Reference for agent skills that load on demand.</td></tr>
+        <tr><td>NVIDIA NeMo docs</td><td>Toolkit workflows</td><td>Skills for workflow YAML and function creation.</td></tr>
+        <tr><td>Meta developer center</td><td>Wearables / platform SDKs</td><td>Portable skills for specific toolkits.</td></tr>
+      </table>
+
+      <h2 id="how">How to Choose a Coding Agent Skill</h2>
+      <p>Pick one high-value, repetitive job you already do by hand, then install a skill for it. Start with debugging and testing, because those give the fastest feedback. Keep the skill set small, and review any third-party skill before running it, since a skill can execute scripts and read files.</p>
+
+      <div class="note"><strong>Quick start:</strong> clone a public skill collection, copy the folder you need into your agent's skills directory, and run one real task. Measure whether the agent's output improved before adding more skills.</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>CodingAgentSkills &mdash; a reference list of the best AI coding agent skills in 2026.</p>
+    </div>
+  </footer>
+</body>
+</html>

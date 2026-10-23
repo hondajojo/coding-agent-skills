@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://coding-agent-skills.example.com/sitemap.xml
+Sitemap: https://hondajojo.github.io/coding-agent-skills/sitemap.xml
